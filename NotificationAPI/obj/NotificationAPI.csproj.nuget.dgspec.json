@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj": {}
+    "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj": {
+    "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj",
         "projectName": "NotificationAPI",
-        "projectPath": "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj",
+        "projectPath": "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj",
         "packagesPath": "C:\\Users\\Charm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\obj\\",
+        "outputPath": "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI-git\\NotificationAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -42,6 +42,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
+            },
             "SendGrid": {
               "target": "Package",
               "version": "[9.21.1, )"
@@ -49,6 +53,10 @@
             "System.ComponentModel.Annotations": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[5.49.0, )"
             }
           },
           "imports": [
@@ -61,12 +69,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -75,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

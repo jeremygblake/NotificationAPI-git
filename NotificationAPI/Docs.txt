@@ -10,3 +10,45 @@
 
 
 
+
+    I used insomnia REST Client to complete the requests to the API
+
+
+
+
+
+    
+
+
+    endpoint: https://localhost:44356/api/SendText
+	{
+	"Body": "hey whats up?",
+	"From": "+15017122661",
+	"TO":   "+15017122661"
+	}
+
+
+
+    endpoint: https://localhost:44356/api/SendMail
+
+{
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john@example.com"
+        }
+      ],
+      "subject": "Hello, World!"
+    }
+  ],
+  "from": {
+    "email": "from_address@example.com"
+  },
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "Hello, World!"
+    }
+  ]
+}

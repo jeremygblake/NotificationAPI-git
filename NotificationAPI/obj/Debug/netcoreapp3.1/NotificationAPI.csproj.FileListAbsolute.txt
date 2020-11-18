@@ -39,8 +39,6 @@ C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\bin\Debug\ne
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.csprojAssemblyReference.cache
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.AssemblyInfoInputs.cache
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.AssemblyInfo.cs
-C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.csproj.CoreCompileInputs.cache
-C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.RazorTargetAssemblyInfo.cache
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.csproj.CopyComplete
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\staticwebassets\NotificationAPI.StaticWebAssets.Manifest.cache
@@ -48,3 +46,11 @@ C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\ne
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.dll
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.pdb
 C:\Users\Charm\Documents\GitHub\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.genruntimeconfig.cache
+C:\Users\Charm\Documents\Github\NotificationAPI-git\NotificationAPI\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\Charm\Documents\Github\NotificationAPI-git\NotificationAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Charm\Documents\Github\NotificationAPI-git\NotificationAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Charm\Documents\Github\NotificationAPI-git\NotificationAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Charm\Documents\Github\NotificationAPI-git\NotificationAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Charm\Documents\Github\NotificationAPI-git\NotificationAPI\bin\Debug\netcoreapp3.1\Twilio.dll
+C:\Users\Charm\Documents\Github\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.csproj.CoreCompileInputs.cache
+C:\Users\Charm\Documents\Github\NotificationAPI-git\NotificationAPI\obj\Debug\netcoreapp3.1\NotificationAPI.MvcApplicationPartsAssemblyInfo.cache

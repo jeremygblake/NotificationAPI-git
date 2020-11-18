@@ -11,6 +11,7 @@ namespace NotificationAPI.Models
 
         [Required]
         [EmailAddress]
+        
         public String Recipent { set; get; }
 
 
@@ -21,14 +22,9 @@ namespace NotificationAPI.Models
 
         [Required]
         [StringLength(600)]
-        public String Msg { set; get; }
+        public String Body { set; get; }
 
 
         public String Subject { set; get; }
-
-
-        [Required]
-        public DateTime date { set; get; }
-        
     }
 }
