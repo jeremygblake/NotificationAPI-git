@@ -1,0 +1,9 @@
+﻿Requirements:
+	add sendgrid dependencies:
+		dotnet add paclage SendGrid
+		dotnet add package SendGrid.Extensions.DependecyInjection
+		
+		Note: must be within project folder
+
+
+		Install-Package System.ComponentModel.Annotations
