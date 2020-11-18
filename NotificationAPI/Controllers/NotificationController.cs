@@ -13,30 +13,26 @@ namespace NotificationAPI.Controllers
 
     public class NotificationController : ControllerBase
     {
-
-
+        [HttpGet]
+        public IActionResult testMethod()
+        {
+            return Ok("TEST");
+        }
        [HttpPost]
        public async Task<ActionResult<EmailNotificationModel>> CreateEmailNotification(EmailNotificationModel emailmodel)
         {
             
             try
             {
-                //
-                var API_KEY = "";
-                var client = new SendGridClient(API_KEY);
-                //data
+                 string api_key = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
+                
+                //client = ?
 
-                //send the sendgrid request
+                //var to = new EmailAddress(); 
+               // var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
 
-                var from = new EmailAddress();   //Todo: populate emails
-                var to = new EmailAddress(); 
-                var subject = "";
-                var plainTextContent = "";
-                var htmlContent = "";
-                var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
-
-                var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
-                return Ok();
+               // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+                return Ok(emailmodel.Recipent);
             }
             catch (Exception)
             {
@@ -44,6 +40,10 @@ namespace NotificationAPI.Controllers
             }
         }
         
+        private void createmessage()
+        {
+
+        }
 
     }
 

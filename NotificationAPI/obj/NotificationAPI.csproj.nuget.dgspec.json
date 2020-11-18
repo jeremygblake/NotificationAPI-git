@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI\\NotificationAPI\\NotificationAPI.csproj": {}
+    "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI\\NotificationAPI\\NotificationAPI.csproj": {
+    "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI\\NotificationAPI\\NotificationAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj",
         "projectName": "NotificationAPI",
-        "projectPath": "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI\\NotificationAPI\\NotificationAPI.csproj",
+        "projectPath": "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\NotificationAPI.csproj",
         "packagesPath": "C:\\Users\\Charm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charm\\Documents\\Github\\NotificationAPI\\NotificationAPI\\obj\\",
+        "outputPath": "C:\\Users\\Charm\\Documents\\GitHub\\NotificationAPI-git\\NotificationAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -61,6 +61,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -69,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
