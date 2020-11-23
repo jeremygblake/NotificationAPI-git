@@ -1,0 +1,21 @@
+{
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john@example.com"     //recievers email
+        }
+      ],
+      "subject": "Hello, World!"
+    }
+  ],
+  "from": {
+    "email": "from_address@example.com"  //senders email
+  },
+  "content": [
+    {
+      "type": "text/plain",  //data type
+      "value": "Hello, World!"      //body of message / main text
+    }
+  ]
+}

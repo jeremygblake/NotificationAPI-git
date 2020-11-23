@@ -1,0 +1,48 @@
+﻿
+
+The following are the packages I used, though I believe they are auto injected when opening the project on another computer.
+Requirements:
+	add sendgrid dependencies:
+		dotnet add paclage SendGrid
+		dotnet add package SendGrid.Extensions.DependecyInjection
+		dotnet add package RestSharp
+        dotnet add package System.ComponentModel.Annotations
+
+		Note: must be within project folder or nuget PM console
+
+
+API KEYS:
+
+    the api keys and appropriate authorzation should be added to the launchSettings.json file.
+    The following elements were added.
+
+    "ASPNETCORE_ENVIRONMENT": "Development",
+    "SENDGRID_URI": "https://api.sendgrid.com/v3/mail/send",
+    "SENDGRID_API_KEY": "123",
+    "TWILIO_ACCOUNT_SID": "123",
+    "TWILIO_AUTH_TOKEN": "123"
+    
+    I named them to be very straight forward.  The twilio does not need a URI endpoint since it uses the .NET package.
+
+
+
+
+
+Usage/Testing:
+		
+    I used Insomnia REST Client to complete the requests to the API.  I am sure that Postman or any other is fine.  I just like the Insomia slogan...  "Never worry about REST again"
+
+    SendGrid:
+       endpoint: https://localhost:44356/api/SendMail
+       json formatting:  see Docs/SendMail.json
+
+
+    Twilio: 
+        endpoint: https://localhost:44356/api/SendText
+        json formatting: see Docs/SendText.json
+    
+
+
+    
+
+
