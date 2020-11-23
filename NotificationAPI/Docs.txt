@@ -1,29 +1,30 @@
-﻿Requirements:
+﻿
+
+The following are the packages I used, though I believe they are auto injected when opening the project on another computer.
+Requirements:
 	add sendgrid dependencies:
 		dotnet add paclage SendGrid
 		dotnet add package SendGrid.Extensions.DependecyInjection
+		dotnet add package RestSharp
+        dotnet add package System.ComponentModel.Annotations
+
+		Note: must be within project folder or nuget PM console
+
+
+
+
+
+Testing:
+
 		
-		Note: must be within project folder
-
-
-		Install-Package System.ComponentModel.Annotations
-
-
-
-
     I used insomnia REST Client to complete the requests to the API
 
 
-
-
-
-    
-
-
     endpoint: https://localhost:44356/api/SendText
+
 	{
 	"Body": "hey whats up?",
-	"From": "+15017122661",
+	"From": "+16191234567",
 	"TO":   "+15017122661"
 	}
 
@@ -52,3 +53,5 @@
     }
   ]
 }
+
+

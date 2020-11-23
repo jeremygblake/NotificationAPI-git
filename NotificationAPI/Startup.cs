@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+//using Microsoft.Extensions.Logging;  did not set up logging in this porject but comments are available where it should be added
 
 namespace NotificationAPI
 {
@@ -24,8 +18,11 @@ namespace NotificationAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddControllers();
             services.AddHttpClient();   //this was implemented to add support for the thirdparty api call
+
+            //[LOGGER] which services are being used in each instance.  could be used for security or seeing why a bug occured.
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -34,18 +31,20 @@ namespace NotificationAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            //
 
-
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            //[LOGGER] log what access the application is granted and the properties used
         }
     }
 }

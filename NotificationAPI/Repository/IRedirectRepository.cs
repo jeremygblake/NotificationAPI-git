@@ -1,4 +1,21 @@
-﻿using System;
+﻿/*
+ * @ Jeremy Goold
+ * @ IRedirectRepository.cs
+ * 
+ * Notes:
+ *  This file offeres the Redirect acess to the third parts API.  Both classes implement the IRedirectRespositoy.  
+ *  The idea was to approach it through OOP and then the more complex is became the easier it was to implement new features.
+ * 
+ *  Normally I would not have the interface and the classes implementing them to be in the same file.  Though this poject is small and I did not want to clutter it.
+ *  
+ *  
+ *  This class and interface model would make more sense the more complicated the project was.  If I was using the restsharp package for both methods it would 
+ *  probably come out very clean. Though in this case I wanted to show that I knew how to use either method.
+ */
+
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,14 +24,7 @@ using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using RestSharp;
 
-/*
- * 
- * 
- * This file offeres the Redirect acess to the third parts API.  Both classes implement the IRedirectRespositoy.  
- * The idea was to approach it through OOP and then the more complex is became the easier it was to implement new features.
- * 
- * 
- */
+
 namespace NotificationAPI.Repositories
 {
     public interface IRedirectRepository
@@ -34,7 +44,7 @@ namespace NotificationAPI.Repositories
 
             try
             {
-                //Log the requests that we are making if the Twilio app does not already store this information.
+                //Log the requests that we are making if the Twilio app does not already store this information.  
 
                 TwilioClient.Init(Environment.GetEnvironmentVariable("TWILIO_ACCOUNT_SID"), Environment.GetEnvironmentVariable("TWILIO_AUTH_TOKEN"));
                 var message = MessageResource.Create(

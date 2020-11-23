@@ -1,4 +1,18 @@
-﻿using System.Threading.Tasks;
+﻿/* 
+ * @ Jeremy Goold
+ * NotificationController.cs
+ * 
+ * 
+ * Notes:
+ *  This is the API handler for the project.  It acts as the entry point and all
+ *  data should be validated and filtered as it is a hole in the system.
+ * 
+ */
+
+
+
+
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using NotificationAPI.Models;
 using Microsoft.AspNetCore.Http;
@@ -13,7 +27,7 @@ namespace NotificationAPI.Controllers
     [ApiController]
     public class MailNotificationController : ControllerBase
     {
-
+        //this object allows us to redirect REST requests to SendGrid
         private readonly IRedirectRepository _redirect = new RedirectMail();
 
         [HttpGet]
@@ -27,13 +41,15 @@ namespace NotificationAPI.Controllers
         public async Task<ActionResult<SendMailModel>> SendMail(SendMailModel newMailData )
         {
             //data validation and filtering
+            //log data from the request and what they attempted to request with.  Might want to encode this is you are not validation before logging.
 
-            if (newMailData.from.email == null || newMailData.from.email == "")              //auto generate a noreply address if there was no data filled in in the call
-            {
+
+            if (newMailData.from.email == null || newMailData.from.email == "")                                      //auto generate a noreply address if there was no data filled in in the call
+            {                                                                                                        //could potentially create a service to create custom messages based on the occasion
                 newMailData.from.email = "noreply@companydomain.com";
             }
 
-
+            //This will redirect the data that has been filtered to our Redirecting service.
             var response = await Task.Run(() =>
                 _redirect.Post(newMailData)
             );
@@ -53,7 +69,7 @@ namespace NotificationAPI.Controllers
     [ApiController]
     public class TEXTNotificationController : ControllerBase
     {
-
+        //Redirect access for Twilio
         private readonly IRedirectRepository _redirect = new RedirectText();
 
 
@@ -61,7 +77,9 @@ namespace NotificationAPI.Controllers
         public async Task<ActionResult<SendTextModel>> SendText(SendTextModel newTextData)
         {
             //data validation and filtering.  if going into a database one could encode on entry
-            var response = await Task.Run( ()=>_redirect.Post(newTextData));
+            //log data from the request and what they attempted to request with.  Might want to encode this is you are not validation before logging.
+            var response = await Task.Run( ()=> _redirect.Post(newTextData));
+           
             return Ok(response);
 
         }
